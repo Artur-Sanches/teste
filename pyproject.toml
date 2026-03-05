@@ -1,0 +1,15 @@
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -v --tb=short"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
